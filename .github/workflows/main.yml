@@ -1,8 +1,0 @@
-- name: Convert CIDV0
-  id: convert_cidv0
-  uses: uniswap/convert-cidv0-cidv1@v1.0.0
-  with:
-    cidv0: Qma752uMu17uMRHcEisyWfQUygMWf5LFTxQQj91VGcCFoS
-
-- name: Use CIDv1
-  run: echo ${{ steps.convert_cidv0.outputs.cidv1 }}
